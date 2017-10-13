@@ -8,6 +8,8 @@ uniform float threshold;
 
 void main(void)
 {
+    vec2 uvs = vTextureCoord.xy;
+
     vec4 color = texture2D(uSampler, vTextureCoord);
     /*if (color.a < threshold)
     {
